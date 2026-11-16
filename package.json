@@ -1,0 +1,23 @@
+{
+  "name": "bookqhub--catalog-service",
+  "version": "1.0.0",
+  "description": "catalog service to BookQHub app",
+  "homepage": "https://github.com/BookQHub/BookQhub--catalog-service#readme",
+  "bugs": {
+    "url": "https://github.com/BookQHub/BookQhub--catalog-service/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BookQHub/BookQhub--catalog-service.git"
+  },
+  "license": "ISC",
+  "author": "ayoub nasraoui",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
