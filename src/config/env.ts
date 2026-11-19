@@ -10,9 +10,7 @@ const required = (name: string): string => {
 
   return value;
 };
-const user = required("DATABASE_USER");
-const password = required("DATABASE_PASSWORD");
-const database = required("DATABASE");
+
 const parseInteger = (
   name: string,
   value: string | undefined,
@@ -42,7 +40,7 @@ const parseBoolean = (
   throw new Error(`${name} must be "true" or "false"`);
 };
 
-const databaseUrl = `postgresql://${user}:${password}@localhost:5433/${database}`;
+const databaseUrl = required("DATABASE_URL");
 
 try {
   const parsedUrl = new URL(databaseUrl);
